@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dea Afrizal Web Link</title>
+    <style>
+        html, body, * {
+            padding: 0;
+            margin: 0;
+            font-family: monospace;
+        }
+        .box-terluar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
+            height: 100vh;
+            margin:0 auto;
+            background-image: url("gambar1.webp");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .box-saya {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding-bottom: 20px;
+        }
+        .box-saya img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            margin-bottom: 10px;
+        }
+        .box-link {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            gap: 8px;
+        }
+        .box-link button {
+            background-color: white;
+            border: none;
+            padding: 8px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 400ms ease-in-out;
+        }
+        .box-link button:hover {
+            background-color: #333333;
+            color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box-terluar">
+      <div class="box-saya">
+        <img src="saya.png" />
+        <h1>DEA AFRIZAL</h1>
+        <p>✨ I'm tech influencer! ✨</p>
+      </div>
+      <div class="box-link">
+        <button onclick="hayu('https://instagram.com/dea.afrizal')">Instagram</button>
+        <button onclick="hayu('https://youtube.com/@deaafrizal')">Youtube</button>
+        <button onclick="hayu('https://tiktok.com/dea.afrizal')">Tiktok</button>
+        <button onclick="hayu('https://facebok.com')">Facebook</button>
+        <button onclick="hayu('https://linkedin.com')">Linkedin</button>
+      </div>
+    </div>
+    <script>
+        function hayu(kemana) {
+           window.open(kemana)
+        }
+    </script>
+  </body>
+</html>
